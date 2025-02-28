@@ -24,17 +24,18 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          debugShowMaterialGrid: true,
+          debugShowMaterialGrid: false,
           title: "Barkly",
           theme: ThemeData(
             brightness: Brightness.light,
+            fontFamily: "OpenSans",
           ),
-          initialRoute: "/home",
+          initialRoute: "/onbording",
           routes: {
-            "/home":(context) => HomeRoute(),
-            "/onbording":(context) => OnbordingRoute(),
-            "/login":(context) => LoginRoute(),
-            "/signup":(context) => SignupRoute(),
+            "/home": (context) => HomeRoute(),
+            "/onbording": (context) => OnbordingRoute(),
+            "/login": (context) => LoginRoute(),
+            "/signup": (context) => SignupRoute(),
           },
         );
       },
