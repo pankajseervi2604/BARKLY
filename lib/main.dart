@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.light,
             fontFamily: "OpenSans",
           ),
-          initialRoute: "/onbording",
+          initialRoute: "/signup",
           routes: {
             "/home": (context) => HomeRoute(),
             "/onbording": (context) => OnbordingRoute(),

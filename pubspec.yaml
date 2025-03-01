@@ -36,6 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_screenutil: ^5.9.3
   smooth_page_indicator: ^1.2.1
+  font_awesome_flutter: ^10.8.0
+  iconsax: ^0.0.8
+  awesome_snackbar_content: ^0.1.5
+  flutter_otp_text_field: ^1.5.1+1
 
 dev_dependencies:
   flutter_test:
@@ -62,7 +66,8 @@ flutter:
   assets:
     - assets/images/applogo/
     - assets/images/illusturations/
-
+    - assets/images/sys_img/
+    - assets/images/applogo/icons/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
