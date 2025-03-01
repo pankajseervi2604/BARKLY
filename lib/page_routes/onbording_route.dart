@@ -105,7 +105,7 @@ class OnbordingRoute extends StatelessWidget {
                     ),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
-                        Navigator.of(context).pop(
+                        Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => LoginRoute(),
                           ),

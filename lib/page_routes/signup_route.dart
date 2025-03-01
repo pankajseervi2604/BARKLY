@@ -1,62 +1,43 @@
-import 'package:barkly/components/account_connection.dart';
-import 'package:barkly/page_routes/additional_pages/forget_password.dart';
-import 'package:barkly/page_routes/home_route.dart';
+import 'package:barkly/page_routes/login_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:iconsax/iconsax.dart';
 
 class SignupRoute extends StatelessWidget {
   const SignupRoute({super.key});
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController controller = TextEditingController();
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(left: 20.r, right: 20.r, top: 20.r),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Stack(
-                children: [
-                  Positioned(
-                    top: 130,
-                    left: 120,
-                    child: Text(
-                      "BARKLY",
-                      textScaler: TextScaler.linear(2),
-                      style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ),
-                  Image.asset(
-                    "assets/images/sys_img/footprint.png",
-                    color: Colors.black,
-                  ),
-                ],
+              Image.asset("assets/images/illusturations/illusturation_5.jpg"),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Text(
+                  "Welcome",
+                  textScaler: TextScaler.linear(2),
+                ),
+              ),
+              SizedBox(
+                height: 10.h,
               ),
               Align(
                 alignment: Alignment.topLeft,
                 child: Text(
-                  "Login",
-                  textScaler: TextScaler.linear(1.75),
-                  style: TextStyle(
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black,
-                  ),
+                  "create your new account please",
+                  textScaler: TextScaler.linear(1),
                 ),
               ),
               SizedBox(
-                height: 30.h,
+                height: 20.h,
               ),
               TextField(
                 keyboardType: TextInputType.emailAddress,
-                controller: controller,
                 cursorColor: Colors.black,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -83,9 +64,7 @@ class SignupRoute extends StatelessWidget {
                 height: 20.h,
               ),
               TextField(
-                obscureText: true,
-                keyboardType: TextInputType.emailAddress,
-                controller: controller,
+                keyboardType: TextInputType.text,
                 cursorColor: Colors.black,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -102,43 +81,12 @@ class SignupRoute extends StatelessWidget {
                       width: 2,
                     ),
                   ),
-                  hintText: "password",
+                  hintText: "create password",
                   prefixIcon: Icon(Icons.password),
-                  suffixIcon: IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Iconsax.eye_slash,
-                    ),
-                  ),
                 ),
               ),
               SizedBox(
-                height: 5.h,
-              ),
-              Align(
-                alignment: Alignment.centerRight,
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => ForgetPassword(),
-                      ),
-                    );
-                  },
-                  child: Text(
-                    "Forget password",
-                    style: TextStyle(
-                      decoration: TextDecoration.underline,
-                      decorationColor: Colors.black,
-                      decorationStyle: TextDecorationStyle.dotted,
-                      decorationThickness: 2,
-                      fontWeight: FontWeight.w100,
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 20.h,
+                height: 40.h,
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
@@ -150,8 +98,11 @@ class SignupRoute extends StatelessWidget {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       elevation: 5,
-                      behavior: SnackBarBehavior.fixed,
-                      backgroundColor: Colors.green,
+                      behavior: SnackBarBehavior.floating,
+                      backgroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                       content: Row(
                         children: [
                           Container(
@@ -160,7 +111,7 @@ class SignupRoute extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               border: Border.all(
-                                color: Colors.white,
+                                color: Colors.black,
                               ),
                             ),
                             child: Padding(
@@ -175,7 +126,7 @@ class SignupRoute extends StatelessWidget {
                             width: 5.w,
                           ),
                           Text(
-                            "Congrulations, account created successfully!!!",
+                            "Account created, Please try to re-login",
                             style: TextStyle(
                               color: Colors.black,
                             ),
@@ -186,123 +137,13 @@ class SignupRoute extends StatelessWidget {
                   );
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => HomeRoute(),
+                      builder: (context) => LoginRoute(),
                     ),
                   );
                 },
                 child: Text(
-                  "Login",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 20.h,
-              ),
-              Stack(
-                children: [
-                  Divider(
-                    indent: 30,
-                    endIndent: 30,
-                  ),
-                  Positioned(
-                    left: 120,
-                    child: Container(
-                      height: 20.h,
-                      width: 110.w,
-                      color: Colors.white,
-                      child: Padding(
-                        padding: EdgeInsets.all(0.050.r),
-                        child: Text(
-                          "or continue with",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 12.sp,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 20.h,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  AccountConnection(
-                      imageId: "assets/images/applogo/icons/google.png"),
-                  AccountConnection(
-                      imageId: "assets/images/applogo/icons/facebook.png"),
-                  AccountConnection(
-                      imageId: "assets/images/applogo/icons/apple.png"),
-                ],
-              ),
-              SizedBox(
-                height: 20.h,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text("Don't have an account? Sign up "),
-                  GestureDetector(
-                    onTap: () {},
-                    child: Text(
-                      "here",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w600,
-                        decoration: TextDecoration.underline,
-                        decorationColor: Colors.black,
-                        decorationStyle: TextDecorationStyle.dotted,
-                        decorationThickness: 2,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 120.h,
-              ),
-              RichText(
-                text: TextSpan(
-                  text: "By signing up, you agree to our ",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 12.sp,
-                  ),
-                  children: [
-                    TextSpan(
-                      text: "T&Cs",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        decoration: TextDecoration.underline,
-                        decorationColor: Colors.black,
-                        decorationStyle: TextDecorationStyle.dashed,
-                        decorationThickness: 2,
-                      ),
-                    ),
-                    TextSpan(
-                      text: " and ",
-                      style: TextStyle(
-                        color: Colors.black,
-                      ),
-                    ),
-                    TextSpan(
-                      text: "Privacy Policy",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        decoration: TextDecoration.underline,
-                        decorationColor: Colors.black,
-                        decorationStyle: TextDecorationStyle.dashed,
-                        decorationThickness: 2,
-                      ),
-                    ),
-                  ],
+                  "create account",
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ],

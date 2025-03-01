@@ -121,7 +121,24 @@ class ForgetPassword extends StatelessWidget {
                                 onSubmit: (String verificationCode) {},
                               ),
                               SizedBox(
-                                height: 80.h,
+                                height: 40.h,
+                              ),
+                              GestureDetector(
+                                onTap: () {},
+                                child: Text(
+                                  "resend OTP",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    decoration: TextDecoration.underline,
+                                    decorationColor: Colors.black,
+                                    decorationStyle: TextDecorationStyle.dashed,
+                                    decorationThickness: 2,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 40.h,
                               ),
                               ElevatedButton(
                                 style: ElevatedButton.styleFrom(
@@ -137,7 +154,7 @@ class ForgetPassword extends StatelessWidget {
                                   );
                                 },
                                 child: Text(
-                                  "submit",
+                                  "submit OPT",
                                   style: TextStyle(color: Colors.white),
                                 ),
                               ),
