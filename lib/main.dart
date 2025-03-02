@@ -2,6 +2,7 @@ import 'package:barkly/page_routes/home_route.dart';
 import 'package:barkly/page_routes/login_route.dart';
 import 'package:barkly/page_routes/onbording_route.dart';
 import 'package:barkly/page_routes/signup_route.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.light,
             fontFamily: "OpenSans",
           ),
-          initialRoute: "/signup",
+          initialRoute: "/home",
           routes: {
             "/home": (context) => HomeRoute(),
             "/onbording": (context) => OnbordingRoute(),
