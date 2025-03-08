@@ -1,0 +1,19 @@
+
+{
+    "pets":[
+        {
+            "doge" :[
+                {
+                    "pet_id" : 1,
+                    "pet_name" : "Coco",
+                    "pet_age" : "Adult",
+                    "pet_bread" : "Labrador",
+                    "pet_gender" : "male",
+                    "pet_image" : "assets/images/sys_img/pets/dogs/labrador.jpeg"
+                }
+            ],
+            "cats":[],
+            "rabbits":[]
+        }
+    ]
+}
