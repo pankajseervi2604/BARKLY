@@ -1,19 +1,184 @@
-
 {
-    "pets":[
-        {
-            "doge" :[
-                {
-                    "pet_id" : 1,
-                    "pet_name" : "Coco",
-                    "pet_age" : "Adult",
-                    "pet_bread" : "Labrador",
-                    "pet_gender" : "male",
-                    "pet_image" : "assets/images/sys_img/pets/dogs/labrador.jpeg"
-                }
-            ],
-            "cats":[],
-            "rabbits":[]
-        }
+    "pets": [
+      {
+        "pet_id": 1,
+        "pet_name": "Buddy",
+        "pet_age": "young",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Golden Retriever",
+        "pet_type": "dog",
+        "pet_gender": "male"
+      },
+      {
+        "pet_id": 2,
+        "pet_name": "Max",
+        "pet_age": "adult",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Bulldog",
+        "pet_type": "dog",
+        "pet_gender": "male"
+      },
+      {
+        "pet_id": 3,
+        "pet_name": "Charlie",
+        "pet_age": "puppy",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Beagle",
+        "pet_type": "dog",
+        "pet_gender": "male"
+      },
+      {
+        "pet_id": 4,
+        "pet_name": "Rocky",
+        "pet_age": "puppy",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Boxer",
+        "pet_type": "dog",
+        "pet_gender": "male"
+      },
+      {
+        "pet_id": 5,
+        "pet_name": "Cooper",
+        "pet_age": "adult",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Poodle",
+        "pet_type": "dog",
+        "pet_gender": "male"
+      },
+      {
+        "pet_id": 6,
+        "pet_name": "Duke",
+        "pet_age": "adult",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Rottweiler",
+        "pet_type": "dog",
+        "pet_gender": "male"
+      },
+      {
+        "pet_id": 7,
+        "pet_name": "Teddy",
+        "pet_age": "puppy",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Shih Tzu",
+        "pet_type": "dog",
+        "pet_gender": "female"
+      },
+      {
+        "pet_id": 8,
+        "pet_name": "Finn",
+        "pet_age": "young",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Labrador",
+        "pet_type": "dog",
+        "pet_gender": "male"
+      },
+      {
+        "pet_id": 9,
+        "pet_name": "Whiskers",
+        "pet_age": "young",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Siamese",
+        "pet_type": "cat",
+        "pet_gender": "female"
+      },
+      {
+        "pet_id": 10,
+        "pet_name": "Mittens",
+        "pet_age": "adult",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Persian",
+        "pet_type": "cat",
+        "pet_gender": "female"
+      },
+      {
+        "pet_id": 11,
+        "pet_name": "Shadow",
+        "pet_age": "young",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Maine Coon",
+        "pet_type": "cat",
+        "pet_gender": "male"
+      },
+      {
+        "pet_id": 12,
+        "pet_name": "Luna",
+        "pet_age": "puppy",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Bengal",
+        "pet_type": "cat",
+        "pet_gender": "female"
+      },
+      {
+        "pet_id": 13,
+        "pet_name": "Bella",
+        "pet_age": "adult",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "British Shorthair",
+        "pet_type": "cat",
+        "pet_gender": "female"
+      },
+      {
+        "pet_id": 14,
+        "pet_name": "Coco",
+        "pet_age": "young",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Scottish Fold",
+        "pet_type": "cat",
+        "pet_gender": "female"
+      },
+      {
+        "pet_id": 15,
+        "pet_name": "Fluffy",
+        "pet_age": "young",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Holland Lop",
+        "pet_type": "rabbit",
+        "pet_gender": "female"
+      },
+      {
+        "pet_id": 16,
+        "pet_name": "Bunny",
+        "pet_age": "puppy",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Netherland Dwarf",
+        "pet_type": "rabbit",
+        "pet_gender": "female"
+      },
+      {
+        "pet_id": 17,
+        "pet_name": "Thumper",
+        "pet_age": "young",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Mini Rex",
+        "pet_type": "rabbit",
+        "pet_gender": "male"
+      },
+      {
+        "pet_id": 18,
+        "pet_name": "Nibbles",
+        "pet_age": "adult",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Lionhead",
+        "pet_type": "rabbit",
+        "pet_gender": "female"
+      },
+      {
+        "pet_id": 19,
+        "pet_name": "Snowball",
+        "pet_age": "young",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Angora",
+        "pet_type": "rabbit",
+        "pet_gender": "female"
+      },
+      {
+        "pet_id": 20,
+        "pet_name": "Daisy",
+        "pet_age": "adult",
+        "pet_image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        "pet_breed": "Himalayan",
+        "pet_type": "rabbit",
+        "pet_gender": "female"
+      }
     ]
-}
+  }

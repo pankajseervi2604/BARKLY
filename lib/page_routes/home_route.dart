@@ -79,7 +79,10 @@ class _HomeRouteState extends State<HomeRoute> {
                       children: [
                         Padding(
                           padding: EdgeInsets.all(5.r),
-                          child: Icon(Iconsax.notification),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Icon(Iconsax.notification),
+                          ),
                         ),
                         Positioned(
                           top: 5,
@@ -215,7 +218,7 @@ class _HomeRouteState extends State<HomeRoute> {
                                             "Coco",
                                             style: TextStyle(
                                               fontSize: 16.sp,
-                                              fontWeight: FontWeight.w600,
+                                              fontWeight: FontWeight.w700,
                                             ),
                                           ),
                                           SizedBox(
@@ -232,6 +235,7 @@ class _HomeRouteState extends State<HomeRoute> {
                                       onPressed: () {},
                                       icon: Icon(
                                         Iconsax.heart,
+                                        color: Colors.purple,
                                       ),
                                     ),
                                   ],
@@ -276,7 +280,6 @@ class _HomeRouteState extends State<HomeRoute> {
               ),
             ),
           ),
-          
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -292,7 +295,7 @@ class _HomeRouteState extends State<HomeRoute> {
         elevation: 10,
         unselectedFontSize: 12.sp,
         selectedFontSize: 14.sp,
-        selectedItemColor: Colors.black,
+        selectedItemColor: Colors.purple,
         showUnselectedLabels: true,
         unselectedItemColor: Colors.grey,
         items: [
