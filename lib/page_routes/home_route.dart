@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shimmer/shimmer.dart';
 
 class HomeRoute extends StatefulWidget {
   const HomeRoute({super.key});
